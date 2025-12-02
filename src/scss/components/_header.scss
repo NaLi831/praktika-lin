@@ -1,1 +1,198 @@
-// ваш код
+.header {
+    background: none;
+    height: 75px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 30px;
+  }
+  &__logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+  }
+  &__list {
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    img {
+      width: 0px;
+      height: 0px;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.2s;
+    font-size: 18px;
+    font-family: 'NunitoSans';
+    transition: 0.4s;
+    &:hover {
+      color: $mainColor;
+    }
+  }
+  &__nav {
+    @include flex-all-center;
+    button {
+      margin-left: 50px;
+      border: none;
+      padding-right: 24px;
+      padding-left: 24px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      background-color: $mainColor;;
+      color: white;
+      font-size: 16px;
+      font-family: 'NunitoSans';
+      border-radius: 4px;
+      transition: 0.4s;
+    }
+    button:hover {
+      background-color: $secondColor;
+      cursor: pointer;
+    }
+    @include tablet {
+      display: block;
+      position: fixed;
+      top: 70px;
+      right: -100%;
+      width: 80%;
+      max-width: 300px;
+      height: calc(100vh - 70px);
+      background: $mainColor;;
+      transition: right 0.4s ease;
+      box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+
+      &.menu--active {
+        right: 0;
+      }
+
+      .header__list {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        img {
+          width: 8px;
+          height: 16px;
+          margin-right: 8px;
+        }
+      }
+
+      button {
+        background-color: #ffffff;
+        color: $mainColor;;
+        margin-left: 16px
+      }
+
+      .header__link:hover {
+        color: $secondColor;
+        text-decoration: underline;
+      }
+
+
+    }
+  }
+
+  .burger {
+    @include burger;
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+
+  .container_two {
+    margin-top: 400px;
+    display: block;
+    h1 {
+      font-family: 'NextArt';
+      color: white;
+      font-size: 50px;
+      line-height: 80px;
+    }
+    .tours {
+      background-image: url(../../img/Прозрачное\ чот.png);
+      width: 1180px;
+      height: 161px;
+      .form_touer {
+        @include flex-all-center;
+        width: 1180px;
+        height: 161px;
+        select {
+          padding-left: 16px;
+          padding-right: 8px;
+          padding-bottom: 14px;
+          padding-top: 14px;
+          margin-right: 24px;
+          border-radius: 4px;
+          font-family: 'NunitoSans';
+          font-size: 16px;
+          background: #ffffff24;
+          border: none;
+          color: white;
+          width: 270px;
+          option {
+            color: #18121E;
+          }
+        }
+        input {
+          padding-left: 16px;
+          padding-right: 8px;
+          padding-bottom: 14px;
+          padding-top: 14px;
+          margin-right: 24px;
+          border-radius: 4px;
+          font-family: 'NunitoSans';
+          font-size: 16px;
+          background: #ffffff24;
+          border: none;
+          color: white;
+          width: 270px;
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
+        p {
+          font-size: 14px ;
+          color: white ;
+          font-family: 'NunitoSans';
+          margin-top: 6px;
+          margin-bottom: 6px;
+          margin-left: 2px;
+          opacity: 95%;
+        }
+        button {
+          @include flex-all-center;
+          margin-bottom: 29px;
+          border: none;
+          padding-right: 36px;
+          padding-left: 36px;
+          padding-top: 16px;
+          padding-bottom: 16px;
+          background-color: white;
+          color: #1A3E3E;
+          border-radius: 4px;
+          font-family: 'NunitoSans';
+          font-size: 16px;
+          transition: 0.6s;
+          &:hover {
+            background-color: $secondColor;
+            cursor: pointer;
+          }
+        }
+      }
+
+    }
+
+  }
+
+
+}
