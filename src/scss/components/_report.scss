@@ -1,0 +1,99 @@
+.report {
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1180px;
+  justify-content: center;
+  .text {
+    margin-top: 80px;
+    margin-bottom: 0px;
+    p {
+      color: $secondColor;
+      font-family: 'NunitoSans';
+      font-size: 24px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      display: flex;
+      justify-content: center;
+    }
+    h6 {
+      color: $textColor;
+      font-family: 'NunitoSans';
+      font-size: 32px;
+      margin-top: 0px;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .photo {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1180px;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+
+    button {
+    margin-top: 50px;
+    font-family: 'NunitoSans';
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: $mainColor;
+    color: white;
+    padding-right: 36px;
+    padding-left: 36px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    transition: 0.6s;
+    &:hover {
+      cursor: pointer;
+      background-color: $secondColor;
+    }
+  }
+  }
+
+  .mySlider {
+    display: none;
+  }
+
+  @include small-tablet {
+    margin-bottom: 50px;
+    justify-content: center;
+    .text {
+      max-width: 358px;
+      margin-top: 50px;
+      h6 {
+      margin-bottom: 32px;
+      font-size: 24px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .photo {
+      display: none;
+    }
+    .mySlider {
+      display: block;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .button {
+    button {
+      padding-right: 24px;
+      padding-left: 24px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+}
