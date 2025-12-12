@@ -1,0 +1,129 @@
+.all_content {
+    @include flex-all-center;
+    .img {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      max-width: 520px;
+    }
+    .content {
+      margin-right: 90px;
+      margin-top: 0px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      .main_p {
+        color: $secondColor;
+        font-family: 'NunitoSans';
+        font-size: 24px;
+        margin-bottom: 8px;
+        margin-top: 0px;
+      }
+      h4 {
+        font-family: 'NunitoSans';
+        font-size: 32px;
+        color: $textColor;
+        margin-bottom: 40px;
+        margin-top: 0px;
+      }
+      .text_p {
+        font-family: 'NunitoSans';
+        font-size: 18px;
+        color: $textColor;
+        margin-bottom: 40px;
+        margin-top: 0px;
+        max-width: 640px;
+      }
+      .offers {
+        margin-top: 0px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 50px;
+          height: 50px;
+        }
+        .text {
+          margin-left: 16px;
+          h6 {
+            font-family: 'NunitoSans';
+            font-size: 18px;
+            margin-bottom: 4px;
+            margin-top: 0px;
+          }
+          p {
+            font-family: 'NunitoSans';
+            font-size: 16px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+          }
+        }
+      }
+      button {
+        font-family: 'NunitoSans';
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        background-color: #1A3E3E;
+        color: white;
+        padding-right: 36px;
+        padding-left: 36px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        transition: 0.6s;
+        &:hover {
+          cursor: pointer;
+          background-color: $secondColor;
+        }
+      }
+    }
+    @include tablet {
+      .content {
+      margin-right: none;
+      }
+      .img_tab {
+        display: none;
+        width: 0px;
+        height: 0px;
+      }
+    }
+    @include small-tablet {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .content {
+        margin-right: 0px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        .main_p {
+          font-size: 16px;
+        }
+        h4 {
+          font-size: 24px;
+          margin-bottom: 32px;
+        }
+        .text_p {
+          font-size: 16px;
+          margin-bottom: 32px;
+        }
+        .offers {
+          align-items: flex-start;
+          h6 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+        button {
+           padding-right: 24px;
+            padding-left: 24px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+      }
+      .img {
+        display: none;
+      }
+
+    }
+  }
