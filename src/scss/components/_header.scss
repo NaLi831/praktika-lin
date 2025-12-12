@@ -111,7 +111,14 @@
   .container_two {
     margin-top: 400px;
     display: block;
-    h1 {
+    .big {
+      font-family: 'NextArt';
+      color: white;
+      font-size: 50px;
+      line-height: 80px;
+    }
+    .small {
+      display: none;
       font-family: 'NextArt';
       color: white;
       font-size: 50px;
@@ -121,6 +128,7 @@
       background-image: url(../../img/Прозрачное\ чот.png);
       width: 1180px;
       height: 161px;
+
       .form_touer {
         @include flex-all-center;
         width: 1180px;
@@ -191,7 +199,64 @@
       }
 
     }
+    @include tablet {
+      .big {
+        font-size: 40px;
+        line-height: 55px;
+      }
+      .small {
+        display: none;
+      }
+      .tours {
+        background-image: url(../../img/rect_прозрач.png);
+        width: 930px;
+        height: 200px;
+      }
+      .form_touer {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        width: 930px;
+        height: 200px;
+        margin-left: -24px;
+        .select {
+          margin-top: 25px;
+        }
 
+        button {
+          margin-bottom: none;
+          margin-top: 20px;
+          margin-right: 27px;
+        }
+      }
+    }
+    @include small-tablet {
+      .big {
+        display: none;
+      }
+      .small {
+        display: block;
+        font-size: 35px;
+        line-height: 60px;
+      }
+      .tours {
+        background-image: none;
+        select {
+          display: none;
+        }
+        input {
+          display: none;
+        }
+        p {
+          display: none;
+        }
+        button {
+          margin-right: 0px;
+          margin-top: 0px;
+          margin-left: -700px;
+        }
+      }
+    }
   }
 
 
