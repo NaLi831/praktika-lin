@@ -1,0 +1,146 @@
+.hike {
+  display: flex;
+  // justify-content: space-between;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  max-width: 1180px;
+  .img_tab {
+    display: none;
+  }
+  .img_mob {
+    display: none;
+  }
+  div {
+    min-width: 540px;
+    margin-left: 120px;
+    .main_p {
+      color: $secondColor;
+      font-family: 'NunitoSans';
+      font-size: 24px;
+      margin-bottom: 8px;
+      margin-top: 64px;
+    }
+    h4 {
+      font-family: 'NunitoSans';
+      font-size: 32px;
+      color: $textColor;
+      margin-bottom: 40px;
+      margin-top: 0px;
+      line-height: 40px;
+    }
+    .des_p {
+      font-family: 'NunitoSans';
+      font-size: 18px;
+      color: $textColor;
+      margin-bottom: 40px;
+      margin-top: 0px;
+      line-height: 28px;
+    }
+    .button {
+      margin-left: 0px;
+    }
+    button {
+      font-family: 'NunitoSans';
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      background-color: #1A3E3E;
+      color: white;
+      padding-right: 36px;
+      padding-left: 36px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      margin-top: 0px;
+      transition: 0.6s;
+      &:hover {
+        cursor: pointer;
+        background-color: $secondColor;
+      }
+    }
+  }
+  @include tablet {
+    .img_desk {
+      display: none;
+    }
+    .img_tab {
+      display: block;
+      width: 358px;
+      height: 416px;
+    }
+    .img_mob {
+      display: none;
+    }
+    div {
+      margin-left: 80px;
+      min-width: 0px;
+      .main_p {
+        font-size: 20px;
+        margin-top: 8px;
+      }
+      .des_h4 {
+        font-size: 28px;
+      }
+      .des_p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@include small-tablet {
+  .hike {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    // min-width: 1180px;
+    .img {
+      display: flex;
+      justify-content: center;
+    }
+    .img_desk {
+      display: none;
+    }
+    .img_tab {
+      display: none;
+    }
+    .img_mob {
+      display: block;
+      margin-top: 40px;
+    }
+    .cent_mob {
+      display: flex;
+      justify-content: center;
+    }
+    div {
+      margin-left: 0px;
+      min-width: 0px;
+      max-width: 358px;
+      .main_p {
+        font-size: 16px;
+      }
+      h4 {
+        display: none;
+        font-size: 24px;
+      }
+      .des_p {
+        font-family: 'NunitoSans';
+        font-size: 16px;
+        color: $textColor;
+        margin-bottom: 24px;
+        margin-top: 0px;
+      }
+      .button {
+        display: flex;
+        justify-content: center;
+        button {
+          padding-right: 24px;
+          padding-left: 24px;
+          padding-top: 12px;
+          padding-bottom: 12px;
+
+        }
+      }
+    }
+  }
+}
