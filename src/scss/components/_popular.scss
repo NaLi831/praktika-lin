@@ -1,0 +1,321 @@
+.popular {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1180px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    button {
+      font-family: 'NunitoSans';
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      background-color: $mainColor;
+      color: white;
+      padding-right: 36px;
+      padding-left: 36px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      margin-top: 50px;
+      transition: 0.6s;
+      &:hover {
+        cursor: pointer;
+        background-color: $secondColor;
+      }
+    }
+    .main_text {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 580px;
+      margin-bottom: 50px;
+      p {
+        color: $secondColor;
+        font-family: 'NunitoSans';
+        font-size: 24px;
+        margin-bottom: 8px;
+        margin-top: 0px;
+      }
+      h6 {
+        font-family: 'NunitoSans';
+        font-size: 32px;
+        color: $textColor;
+        margin-bottom: 0px;
+        margin-top: 0px;
+      }
+    }
+    .destinations {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1180px;
+      .img_one {
+        background-image: url(../../img/озеро_возле_гор.png);
+        width: 380px;
+        height: 500px;
+      }
+      .img_two {
+        background-image: url(../../img/ночь_в_горах.png);
+        width: 380px;
+        height: 500px;
+        margin-left: 20px;
+      }
+      .img_three {
+        background-image: url(../../img/йога_в_горах.png);
+        width: 380px;
+        height: 500px;
+        margin-left: 20px;
+      }
+
+      .des_img {
+        .rating {
+          display: flex;
+          justify-content: end;
+          margin-top: 54px;
+          align-items: center;
+          .block {
+            position: absolute;
+            z-index: 1;
+            width: 54px;
+            height: 32px;
+            background: white;
+            opacity: 0.5;
+            border-radius: 4px;
+          }
+          img {
+            width: 17px;
+            height: 17px;
+            z-index: 2;
+          }
+          p {
+            font-size: 14px;
+            font-family: 'NunitoSans';
+            margin-left: 2px;
+            z-index: 2;
+            margin-right: 8px;
+          }
+        }
+      }
+      .info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 312px;
+        .block {
+          position: absolute;
+          z-index: 1;
+          width: 380px;
+          height: 90px;
+          background: white;
+          opacity: 0.3;
+          border-radius: 4px;
+        }
+        .text {
+          h6 {
+            color: white;
+            font-family: 'NunitoSans';
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 2px;
+            margin-left: 32px;
+            z-index: 2;
+          }
+          p {
+            color: white;
+            font-family: 'NunitoSans';
+            font-size: 14px;
+            margin-top: 0px;
+            margin-left: 32px;
+            z-index: 2;
+          }
+        }
+        .price {
+          @include flex-all-center;
+          margin-right: 32px;
+          .block {
+            position: absolute;
+            z-index: 1;
+            width: 80px;
+            height: 40px;
+            background: white;
+            opacity: 0.3;
+            border-radius: 4px;
+          }
+          p {
+            font-family: 'NunitoSans';
+            font-size: 20px;
+            z-index: 2;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .mySliderPopular {
+      display: none;
+    }
+
+     @include tablet {
+      .destinations {
+        justify-content: center;
+        .img_one {
+          margin-bottom: 20px;
+        }
+
+        .img_three {
+          margin-left: 0px;
+          margin-top: 20px;
+        }
+      }
+    }
+    @include small-tablet {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      justify-content: center;
+      .main_text {
+      margin-bottom: 32px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 358px;
+      p {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+      h6 {
+        font-size: 24px;
+      }
+    }
+    button {
+      padding-right: 24px;
+      padding-left: 24px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      margin-top: 32px;
+    }
+    .destinations {
+      // .img_two {
+      //   margin-left: 0px;
+      //   margin-top: 20px;
+      // }
+      // .img_three {
+      //   margin-top: 20px;
+      //   margin-left: 0px;
+      // }
+      display: none;
+    }
+
+    .mySliderPopular {
+      display: block;
+
+      .swiper-slide {
+        // min-height: 500px;
+      }
+
+      .img_one {
+        background-image: url(../../img/озеро_возле_гор.png);
+        background-repeat: no-repeat;
+      }
+      .img_two {
+        background-image: url(../../img/ночь_в_горах.png);
+        background-repeat: no-repeat;
+      }
+      .img_three {
+        background-image: url(../../img/йога_в_горах.png);
+        background-repeat: no-repeat;
+      }
+
+      .kard {
+        display: flex;
+        justify-content: center;
+      }
+
+      .des_img {
+        width: 100%;
+        height: 100%;
+        max-width: 380px;
+        .rating {
+          display: flex;
+          justify-content: end;
+          // margin-top: 54px;
+          align-items: center;
+          padding-top: 54px;
+          .block {
+            position: absolute;
+            z-index: 1;
+            width: 54px;
+            height: 32px;
+            background: white;
+            opacity: 0.5;
+            border-radius: 4px;
+          }
+          img {
+            width: 17px;
+            height: 17px;
+            z-index: 2;
+          }
+          p {
+            font-size: 14px;
+            font-family: 'NunitoSans';
+            margin-left: 2px;
+            z-index: 2;
+            margin-right: 8px;
+          }
+        }
+      }
+      .info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 312px;
+        .block {
+          position: absolute;
+          z-index: 1;
+          width: 380px;
+          height: 90px;
+          background: white;
+          opacity: 0.3;
+          border-radius: 4px;
+        }
+        .text {
+          h6 {
+            color: white;
+            font-family: 'NunitoSans';
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 2px;
+            margin-left: 32px;
+            z-index: 2;
+          }
+          p {
+            color: white;
+            font-family: 'NunitoSans';
+            font-size: 14px;
+            margin-top: 0px;
+            margin-left: 32px;
+            z-index: 2;
+          }
+        }
+        .price {
+          @include flex-all-center;
+          margin-right: 32px;
+          display: flex;
+          justify-content: flex-end;
+          .block {
+            position: absolute;
+            z-index: 1;
+            width: 80px;
+            height: 40px;
+            background: white;
+            opacity: 0.3;
+            border-radius: 4px;
+          }
+          p {
+            font-family: 'NunitoSans';
+            font-size: 20px;
+            z-index: 2;
+            color: white;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
