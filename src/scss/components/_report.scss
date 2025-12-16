@@ -34,6 +34,16 @@
     justify-content: center;
     max-width: 1180px;
   }
+
+  .lightGalery {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    max-width: 1180px;
+  }
+
   .button {
     display: flex;
     justify-content: center;
@@ -63,6 +73,9 @@
   }
 
   @include small-tablet {
+    .lightGalery {
+      display: none;
+    }
     margin-bottom: 50px;
     justify-content: center;
     .text {

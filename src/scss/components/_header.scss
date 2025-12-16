@@ -231,13 +231,15 @@
       }
     }
     @include small-tablet {
+      height: 400px;
+      margin-top: 230px;
       .big {
         display: none;
       }
       .small {
         display: block;
-        font-size: 35px;
-        line-height: 60px;
+        font-size: 30px;
+        line-height: 46px;
       }
       .tours {
         background-image: none;
@@ -252,8 +254,12 @@
         }
         button {
           margin-right: 0px;
-          margin-top: 0px;
+          margin-top: -60px;
           margin-left: -700px;
+          padding-right: 24px;
+          padding-left: 24px;
+          padding-top: 12px;
+          padding-bottom: 12px;
         }
       }
     }

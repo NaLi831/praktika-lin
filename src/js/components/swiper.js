@@ -8,7 +8,7 @@ const mySlider = document.querySelector('.mySlider');
 
 if (mySlider) {
   new Swiper(mySlider, {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
 
