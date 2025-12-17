@@ -1,6 +1,5 @@
 .hike {
   display: flex;
-  // justify-content: space-between;
   margin-bottom: 100px;
   margin-top: 100px;
   max-width: 1180px;
@@ -15,13 +14,13 @@
     margin-left: 120px;
     .main_p {
       color: $secondColor;
-      font-family: 'NunitoSans';
+      font-family: $font-main;
       font-size: 24px;
       margin-bottom: 8px;
       margin-top: 64px;
     }
     h4 {
-      font-family: 'NunitoSans';
+      font-family: $font-main;
       font-size: 32px;
       color: $textColor;
       margin-bottom: 40px;
@@ -29,7 +28,7 @@
       line-height: 40px;
     }
     .des_p {
-      font-family: 'NunitoSans';
+      font-family: $font-main;
       font-size: 18px;
       color: $textColor;
       margin-bottom: 40px;
@@ -40,7 +39,7 @@
       margin-left: 0px;
     }
     button {
-      font-family: 'NunitoSans';
+      font-family: $font-main;
       font-size: 16px;
       border: none;
       border-radius: 4px;
@@ -93,7 +92,6 @@
     justify-content: center;
     margin-bottom: 50px;
     margin-top: 50px;
-    // min-width: 1180px;
     .img {
       display: flex;
       justify-content: center;
@@ -124,7 +122,7 @@
         font-size: 24px;
       }
       .des_p {
-        font-family: 'NunitoSans';
+        font-family: $font-main;
         font-size: 16px;
         color: $textColor;
         margin-bottom: 24px;
